@@ -4,32 +4,22 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-  background-size: cover; /* This makes the background responsive */
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
+
   }
   
   .desktop .overlap-group-wrapper {
     display: flex;
     background-color: #181616;
-   /* height: 730px;*/
+    height: 730px;
     width: 1920px;
-    background-size: cover; /* This makes the background responsive */
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
+ 
   }
   
   .desktop .overlap-group {
     display: flex;
     background-color: #0c0b0b;
-   /* height: 600px;*/
+   height: 600px;
     position: absolute;
-    background-size: cover; /* This makes the background responsive */
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
   }
   
   .desktop .overlap {
@@ -44,7 +34,7 @@
   
   .desktop .rectangle {
     background: linear-gradient(180deg, rgb(5, 119, 171) 0%, rgba(6.23, 89.03, 124.51, 0) 100%);
-   height: 100vh;
+   height: 600px;
     left: 416px;
     position: absolute;
     top: 0;
