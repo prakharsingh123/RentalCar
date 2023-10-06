@@ -4,7 +4,6 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-
   }
   
   .desktop .overlap-group-wrapper {
@@ -12,14 +11,18 @@
     background-color: #181616;
     height: 730px;
     width: 1920px;
- 
+  
   }
   
   .desktop .overlap-group {
     display: flex;
     background-color: #0c0b0b;
-   height: 600px;
+   /* height: 600px;*/
     position: absolute;
+    background-size: cover; /* This makes the background responsive */
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
   }
   
   .desktop .overlap {
@@ -34,7 +37,7 @@
   
   .desktop .rectangle {
     background: linear-gradient(180deg, rgb(5, 119, 171) 0%, rgba(6.23, 89.03, 124.51, 0) 100%);
-   height: 600px;
+   height: 100vh;
     left: 416px;
     position: absolute;
     top: 0;
@@ -92,7 +95,76 @@
 
 @media (max-width: 768px) {
   /* CSS styles for mobile screens go here */
-  .desktop {
-    font-size: 16px; /* Adjust the font size for mobile screens */
+  .desktop #box-1{
+    margin-top:10%;
+    font-size: 40px;
+    margin-left: 7%;
+    display: flex; /* Adjust the font size for mobile screens */
+    justify-content: center;
   }
+   #car-image{
+    width: 500px ;
+    height: 100px;
+    margin-top: 150px;
+    position: absolute;
+
+  }
+  .desktop .rectangle{
+    width: 300px;
+    position: absolute;
+    left: 100px;
+    right: -200px;
+  }
+  .desktop .overlap-group-wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    
+  
+  }
+  .desktop #navbar #logo{
+    margin-left: 2px;
+    font-size: larger;
+  }
+  .desktop #nav{
+    display: none;
+  }
+
+  #button-1{
+    position: absolute;
+    margin-right: 450px;
+    margin-left: -47%;
+    margin-top: -10%;
+   
+  }
+  #discount-banner{
+    font-size: medium;
+    position: absolute;
+    margin-right: 450px;
+    margin-left: -47%;
+    margin-top: -10%;
+
+  }
+  #discount-banner-2{
+    font-size: small;
+    position: absolute;
+    margin-right: 450px;
+    margin-left: -47%;
+    margin-top: -8%;
+
+  }
+
+  #button-2{
+    position: relative;
+    margin-left: 15%;
+    margin-top: -10%;
+  }
+  #banner-1{
+    margin-top: 9%;
+    margin-left: 2%;
+    width: 500px;
+    font-size: small;
+    padding: 3px;
+  }
+  
 }
