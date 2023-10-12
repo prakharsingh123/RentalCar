@@ -4,50 +4,43 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-  }
-  
-  .desktop .overlap-group-wrapper {
-    display: flex;
-    background-color: #181616;
-    height: 730px;
-    width: 1920px;
-  
-  }
-  
-  .desktop .overlap-group {
-    display: flex;
-    background-color: #0c0b0b;
-   /* height: 600px;*/
-    position: absolute;
-    background-size: cover; /* This makes the background responsive */
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-  }
-  
-  .desktop .overlap {
-   
-    height: 600px;
-    left: 100px;
-    position: absolute;
-    top: 0;
-    width: 1238px;
+    height: 100vh;
    
   }
+  
+   
   
   .desktop .rectangle {
     background: linear-gradient(180deg, rgb(5, 119, 171) 0%, rgba(6.23, 89.03, 124.51, 0) 100%);
-   height: 100vh;
-    left: 416px;
+   height: 600px;
+    left: 500px;
     position: absolute;
     top: 0;
     width: 475px;
    
   }
+  .desktop #nav:hover{
+    color: #0c0b0b;
+    transition: 2s all ease-in forwards;
+  }
   
+  #button-2:hover{
+    background-color: #0c0b0b;
+    color: white;
+    border: 1px solid skyblue;
+  }
+  #button-1:hover{
+    background-color: #0c0b0b;
+    color: white;
+    border: 1px solid skyblue;
+   
+  }
   #motion-text {
     animation: slideIn 2s ease forwards;
     opacity: 0;
+}
+#menu{
+  color: #fff;
 }
 
 @keyframes slideIn {
@@ -95,62 +88,64 @@
 
 @media (max-width: 768px) {
   /* CSS styles for mobile screens go here */
+  .desktop {
+    height: 202vh;
+    width: 260vw;
+}
   .desktop #box-1{
     margin-top:10%;
-    font-size: 40px;
-    margin-left: 7%;
-    display: flex; /* Adjust the font size for mobile screens */
+    font-size: 70px;
+    margin-left: 25%;
+    width: 500px;
+    height: 100px;
     justify-content: center;
   }
    #car-image{
-    width: 500px ;
-    height: 100px;
-    margin-top: 150px;
+    width: 900px ;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: 600px;
     position: absolute;
 
   }
   .desktop .rectangle{
-    width: 300px;
+    width: 600px;
     position: absolute;
-    left: 100px;
+    left: 600px;
     right: -200px;
+    height: 120vh;
   }
-  .desktop .overlap-group-wrapper{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    
-  
-  }
+
   .desktop #navbar #logo{
-    margin-left: 2px;
-    font-size: larger;
+    margin-top: 2%;
+    margin-left: -30px;
+    font-size: 60px;
   }
   .desktop #nav{
     display: none;
+    width: 400px;
   }
 
-  #button-1{
-    position: absolute;
-    margin-right: 450px;
-    margin-left: -47%;
-    margin-top: -10%;
-   
+
+  #button-1 {
+  width: 60px;
+
   }
   #discount-banner{
     font-size: medium;
     position: absolute;
-    margin-right: 450px;
-    margin-left: -47%;
-    margin-top: -10%;
+    margin-left: 900px;
+    margin-right: -70%;
+    margin-top: 22%;
 
   }
+
   #discount-banner-2{
     font-size: small;
     position: absolute;
     margin-right: 450px;
-    margin-left: -47%;
-    margin-top: -8%;
+    margin-left: 920px;
+    margin-top: 50%;
 
   }
 
@@ -160,11 +155,93 @@
     margin-top: -10%;
   }
   #banner-1{
-    margin-top: 9%;
-    margin-left: 2%;
-    width: 500px;
+    margin-top: 90%;
+    margin-left: 10%;
+    width: 600px;
     font-size: small;
     padding: 3px;
   }
+
+ 
   
+}
+
+@media (max-width: 360px) {
+  .desktop{
+    height: 350vh;
+    width: 346vw;
+  }
+
+  .desktop .rectangle{
+    height: 220vh;
+    width: 178vw;
+  }
+
+  .desktop #box-1{
+    margin-top: 54%;
+    /* align-items: flex-start; */
+    font-size: 119px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  #car-image{
+    width: 890px;
+    margin-left: 200%;
+    margin-top: 505px;
+    position: absolute;
+
+  }
+  #button-2{
+    position: relative;
+    margin-left: 40%;
+    margin-top: 83%;
+    font-size: xx-large;
+  }
+  #banner-1{
+    margin-top: 45%;
+    margin-left: 10%;
+    width: 880px;
+    font-size: large;
+    padding: 0px;
+    height: 12vh;
+  }
+  .desktop #navbar #logo{
+    margin-left: 12%;
+    font-size: xxx-large;
+    margin-top: 6%;
+  }
+  #discount-banner{
+    width: max-content;
+    font-size: xx-large;
+    position: absolute;
+    margin-left: 192%;
+    margin-top: 47%;
+
+  }
+  
+  #discount-banner-2{
+    font-size: x-large;
+    position: absolute;
+    margin-right: 450px;
+    margin-left: 219%;
+    margin-top: 65%;
+    width: max-content;
+  }
+  #button-1 {
+    width: 60px;
+    position: relative;
+    width: 101px;
+    font-size: xx-large;
+    margin-top: -7%;
+    height: 60px;
+}
+  #discount{
+    margin-right: 300px;
+    margin-left: -30%;
+  }
+  #menu{
+    position: relative;
+    visibility: visible;
+  }
 }
